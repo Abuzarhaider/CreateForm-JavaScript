@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Taking Input from User</title>
+</head>
+
+<body>
+    <!-- User/Filling section -->
+    <div class="main">
+        <div class="parentOne">
+            <h1>Create Your Form</h1>
+            <p>Upload your Profile picture and write Name in the
+                below sections<br> to create a simple form</p>
+            <div class="childOne">
+                <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                <p><label for="file" id="label">Upload Image</label></p>   <!-- Image input -->
+                <p><input type="text" id="pText" onchange="loadText(event)"></p>   <!-- Text intput -->
+                <button id="btn" onclick="display()">Create</button>    <!-- Display onclick -->
+            </div>
+        </div>
+
+        <!-- Form creating section -->
+        <div class="parentTwo">
+            <div class="childTwo">
+                <p><img id="output"/></p>   <!-- Image output -->
+                <div class="childThree">   <!-- Text output -->
+                    <p id="outputText"  style="display: none;"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer style="height: 50px;"></footer>
+    </div>
+</body>
+<script lang="javascript" src="main.js"></script>
+
+</html>
